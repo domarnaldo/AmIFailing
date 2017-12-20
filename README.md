@@ -1,0 +1,2 @@
+# AmIFailing
+Static GPA calculator
