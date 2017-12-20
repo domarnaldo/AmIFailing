@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Am I Failing - GPA Calculator</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Want to find out if you are failing? Calculate your GPA now using this free GPA calculator!" />
+		<meta name="keywords" content="am I failing, college gpa calculator, gpa calculator, how do I calculate my gpa, college gpa, gpa" />
+		<meta name="robots" content="index,follow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97837810-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="/" id="logo">Am I Failing?</a></h1>
+							<p>Know Your GPA</p>
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="/">GPA Calculator</a></li>
+						<li><a href="/schedule-maker">Schedule Maker</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row 200%">
+							<div class="12u">
+								<!-- Highlight -->
+									<section class="box highlight">
+										<div id="semester-wrap">
+										<div class="semester">
+										<header>
+											<h2>Semester 1</h2>
+											<p>Enter Your Classes Below:</p>
+										</header>
+											<table id="semester-1">
+											<tr><td>Class Name</td><td>Number of Credits</td><td>Grade</td></tr>
+												<tr class="class">
+												<td><input type="text" placeholder="Class Name" /></td>
+												<td><input type="number" class="credits" placeholder="Credits" /></td>
+												<td><select class="grade"><option selected="selected">Choose a Grade</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D+">D+</option><option value="D">D</option><option value="F">F</option></select></td>
+												</tr>
+											</table>
+											<p class="gpa-wrap">Semester GPA: <span id="gpa-1">0.0</span></p>
+											<ul class="actions"><li><a href="javascript:addClass(1)" class="button big">Add Class</a></li><li><a href="javascript:calculateGPA(1, false, false)" class="button big">Calculate</a></li></ul>
+										</div>
+										</div>
+										<div style="text-align: center; padding: 5px;"><a href="javascript:addSemester()" class="button alt big">Add Semester</a></div>
+									</section>
+                                <section class="box features">
+										<h2 class="major" style="margin: 0"><span>Calculating your GPA</span></h2>
+										<div style="text-align: center;">
+											The GPA calculator above uses the following chart to calculate your GPA:
+                                            <table class="gpa-info">
+                                                <tr style="font-weight: bold">
+                                                    <td>Grade</td><td>Equivalent</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A</td><td>4.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A-</td><td>3.67</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B+</td><td>3.33</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B</td><td>3.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>B-</td><td>2.67</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C+</td><td>2.33</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C</td><td>2.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>C-</td><td>1.67</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>D+</td><td>1.33</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>D</td><td>1.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>F</td><td>0.00</td>
+                                                </tr>
+                                            </table>
+                                            To calculate your GPA:
+                                            <ul style="text-align: left; list-style: decimal; margin: 0 auto; width: 50%;">
+                                                <li>Multiply each letter grade equivalent by the number of credits that the class is worth.</li>
+                                                <li>Add each of the values up from the previous step.</li>
+                                                <li>Add all of the credits from the classes.</li>
+                                                <li>Divide the sum of the products of each letter grade and their respective number of credits by the sum of the credits.</li>
+                                            </ul>
+										</div>
+									</section>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer" class="container">
+					<!-- Copyright -->
+						<div id="copyright">
+							<ul class="menu">
+								<li>&copy; 2017. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

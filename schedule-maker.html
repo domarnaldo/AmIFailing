@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Am I Failing - Schedule Maker</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Need to create your college class schedule? Use this free tool to organize your week." />
+		<meta name="keywords" content="am I failing, schedule maker, college schedule maker, college schedule, college gpa calculator, gpa calculator, how do I calculate my gpa, college gpa, gpa" />
+		<meta name="robots" content="index,follow" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<meta charset="utf-8">
+		<script src="/assets/js/jquery.min.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-97837810-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+		<script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/html2canvas.js"></script>
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="/" id="logo">Am I Failing?</a></h1>
+							<p>Create Your Schedule</p>
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="/index">GPA Calculator</a></li>
+						<li class="current"><a href="/schedule-maker">Schedule Maker</a></li>
+					</ul>
+				</nav>
+
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row">
+							<div class="12u">
+								<div class="content">
+
+									<!-- Content -->
+
+										<article class="box page-content">
+
+											<header>
+												<h2>College Schedule Maker</h2>
+												<p>Enter your classes and their meeting times below:</p>
+											</header>
+
+											<section>
+												<table id="build-schedule">
+													<tr>
+														<td>Class Name</td>
+														<td>Day(s)</td>
+														<td>Begin Time</td>
+														<td>End Time</td>
+														<td>Color</td>
+													</tr>
+													<tr class="class-time">
+														<td><input type="text" class="class-name" placeholder="Name"/></td>
+														<td>
+														<ul class="class-days">
+															<li><input type="checkbox" value="monday" /> M</li>
+															<li><input type="checkbox" value="tuesday" /> T</li>
+															<li><input type="checkbox" value="wednesday" /> W</li>
+															<li><input type="checkbox" value="thursday" /> R</li>
+															<li><input type="checkbox" value="friday" /> F</li>
+															<li><input type="checkbox" value="saturday" /> S</li>
+															<li><input type="checkbox" value="sunday" /> U</li>
+														</ul>
+															</td>
+														<td><select class="class-begin">
+															<option selected="selected" value="default">Choose a Time</option>
+														<option value="0600">6:00AM</option><option value="0605">6:05AM</option><option value="0610">6:10AM</option><option value="0615">6:15AM</option><option value="0620">6:20AM</option><option value="0625">6:25AM</option><option value="0630">6:30AM</option><option value="0635">6:35AM</option><option value="0640">6:40AM</option><option value="0645">6:45AM</option><option value="0650">6:50AM</option><option value="0655">6:55AM</option><option value="0700">7:00AM</option><option value="0705">7:05AM</option><option value="0710">7:10AM</option><option value="0715">7:15AM</option><option value="0720">7:20AM</option><option value="0725">7:25AM</option><option value="0730">7:30AM</option><option value="0735">7:35AM</option><option value="0740">7:40AM</option><option value="0745">7:45AM</option><option value="0750">7:50AM</option><option value="0755">7:55AM</option><option value="0800">8:00AM</option><option value="0805">8:05AM</option><option value="0810">8:10AM</option><option value="0815">8:15AM</option><option value="0820">8:20AM</option><option value="0825">8:25AM</option><option value="0830">8:30AM</option><option value="0835">8:35AM</option><option value="0840">8:40AM</option><option value="0845">8:45AM</option><option value="0850">8:50AM</option><option value="0855">8:55AM</option><option value="0900">9:00AM</option><option value="0905">9:05AM</option><option value="0910">9:10AM</option><option value="0915">9:15AM</option><option value="0920">9:20AM</option><option value="0925">9:25AM</option><option value="0930">9:30AM</option><option value="0935">9:35AM</option><option value="0940">9:40AM</option><option value="0945">9:45AM</option><option value="0950">9:50AM</option><option value="0955">9:55AM</option><option value="1000">10:00AM</option><option value="1005">10:05AM</option><option value="1010">10:10AM</option><option value="1015">10:15AM</option><option value="1020">10:20AM</option><option value="1025">10:25AM</option><option value="1030">10:30AM</option><option value="1035">10:35AM</option><option value="1040">10:40AM</option><option value="1045">10:45AM</option><option value="1050">10:50AM</option><option value="1055">10:55AM</option><option value="1100">11:00AM</option><option value="1105">11:05AM</option><option value="1110">11:10AM</option><option value="1115">11:15AM</option><option value="1120">11:20AM</option><option value="1125">11:25AM</option><option value="1130">11:30AM</option><option value="1135">11:35AM</option><option value="1140">11:40AM</option><option value="1145">11:45AM</option><option value="1150">11:50AM</option><option value="1155">11:55AM</option><option value="1200">12:00PM</option><option value="1205">12:05PM</option><option value="1210">12:10PM</option><option value="1215">12:15PM</option><option value="1220">12:20PM</option><option value="1225">12:25PM</option><option value="1230">12:30PM</option><option value="1235">12:35PM</option><option value="1240">12:40PM</option><option value="1245">12:45PM</option><option value="1250">12:50PM</option><option value="1255">12:55PM</option><option value="1300">1:00PM</option><option value="1305">1:05PM</option><option value="1310">1:10PM</option><option value="1315">1:15PM</option><option value="1320">1:20PM</option><option value="1325">1:25PM</option><option value="1330">1:30PM</option><option value="1335">1:35PM</option><option value="1340">1:40PM</option><option value="1345">1:45PM</option><option value="1350">1:50PM</option><option value="1355">1:55PM</option><option value="1400">2:00PM</option><option value="1405">2:05PM</option><option value="1410">2:10PM</option><option value="1415">2:15PM</option><option value="1420">2:20PM</option><option value="1425">2:25PM</option><option value="1430">2:30PM</option><option value="1435">2:35PM</option><option value="1440">2:40PM</option><option value="1445">2:45PM</option><option value="1450">2:50PM</option><option value="1455">2:55PM</option><option value="1500">3:00PM</option><option value="1505">3:05PM</option><option value="1510">3:10PM</option><option value="1515">3:15PM</option><option value="1520">3:20PM</option><option value="1525">3:25PM</option><option value="1530">3:30PM</option><option value="1535">3:35PM</option><option value="1540">3:40PM</option><option value="1545">3:45PM</option><option value="1550">3:50PM</option><option value="1555">3:55PM</option><option value="1600">4:00PM</option><option value="1605">4:05PM</option><option value="1610">4:10PM</option><option value="1615">4:15PM</option><option value="1620">4:20PM</option><option value="1625">4:25PM</option><option value="1630">4:30PM</option><option value="1635">4:35PM</option><option value="1640">4:40PM</option><option value="1645">4:45PM</option><option value="1650">4:50PM</option><option value="1655">4:55PM</option><option value="1700">5:00PM</option><option value="1705">5:05PM</option><option value="1710">5:10PM</option><option value="1715">5:15PM</option><option value="1720">5:20PM</option><option value="1725">5:25PM</option><option value="1730">5:30PM</option><option value="1735">5:35PM</option><option value="1740">5:40PM</option><option value="1745">5:45PM</option><option value="1750">5:50PM</option><option value="1755">5:55PM</option><option value="1800">6:00PM</option><option value="1805">6:05PM</option><option value="1810">6:10PM</option><option value="1815">6:15PM</option><option value="1820">6:20PM</option><option value="1825">6:25PM</option><option value="1830">6:30PM</option><option value="1835">6:35PM</option><option value="1840">6:40PM</option><option value="1845">6:45PM</option><option value="1850">6:50PM</option><option value="1855">6:55PM</option><option value="1900">7:00PM</option><option value="1905">7:05PM</option><option value="1910">7:10PM</option><option value="1915">7:15PM</option><option value="1920">7:20PM</option><option value="1925">7:25PM</option><option value="1930">7:30PM</option><option value="1935">7:35PM</option><option value="1940">7:40PM</option><option value="1945">7:45PM</option><option value="1950">7:50PM</option><option value="1955">7:55PM</option><option value="2000">8:00PM</option><option value="2005">8:05PM</option><option value="2010">8:10PM</option><option value="2015">8:15PM</option><option value="2020">8:20PM</option><option value="2025">8:25PM</option><option value="2030">8:30PM</option><option value="2035">8:35PM</option><option value="2040">8:40PM</option><option value="2045">8:45PM</option><option value="2050">8:50PM</option><option value="2055">8:55PM</option><option value="2100">9:00PM</option><option value="2105">9:05PM</option><option value="2110">9:10PM</option><option value="2115">9:15PM</option><option value="2120">9:20PM</option><option value="2125">9:25PM</option><option value="2130">9:30PM</option><option value="2135">9:35PM</option><option value="2140">9:40PM</option><option value="2145">9:45PM</option><option value="2150">9:50PM</option><option value="2155">9:55PM</option><option value="2200">10:00PM</option><option value="2205">10:05PM</option><option value="2210">10:10PM</option><option value="2215">10:15PM</option><option value="2220">10:20PM</option><option value="2225">10:25PM</option><option value="2230">10:30PM</option><option value="2235">10:35PM</option><option value="2240">10:40PM</option><option value="2245">10:45PM</option><option value="2250">10:50PM</option><option value="2255">10:55PM</option><option value="2300">11:00PM</option><option value="2305">11:05PM</option><option value="2310">11:10PM</option><option value="2315">11:15PM</option><option value="2320">11:20PM</option><option value="2325">11:25PM</option><option value="2330">11:30PM</option><option value="2335">11:35PM</option><option value="2340">11:40PM</option><option value="2345">11:45PM</option><option value="2350">11:50PM</option><option value="2355">11:55PM</option></select></td>
+														<td><select class="class-end">
+															<option selected="selected" value="default">Choose a Time</option>
+														<option value="0600">6:00AM</option><option value="0605">6:05AM</option><option value="0610">6:10AM</option><option value="0615">6:15AM</option><option value="0620">6:20AM</option><option value="0625">6:25AM</option><option value="0630">6:30AM</option><option value="0635">6:35AM</option><option value="0640">6:40AM</option><option value="0645">6:45AM</option><option value="0650">6:50AM</option><option value="0655">6:55AM</option><option value="0700">7:00AM</option><option value="0705">7:05AM</option><option value="0710">7:10AM</option><option value="0715">7:15AM</option><option value="0720">7:20AM</option><option value="0725">7:25AM</option><option value="0730">7:30AM</option><option value="0735">7:35AM</option><option value="0740">7:40AM</option><option value="0745">7:45AM</option><option value="0750">7:50AM</option><option value="0755">7:55AM</option><option value="0800">8:00AM</option><option value="0805">8:05AM</option><option value="0810">8:10AM</option><option value="0815">8:15AM</option><option value="0820">8:20AM</option><option value="0825">8:25AM</option><option value="0830">8:30AM</option><option value="0835">8:35AM</option><option value="0840">8:40AM</option><option value="0845">8:45AM</option><option value="0850">8:50AM</option><option value="0855">8:55AM</option><option value="0900">9:00AM</option><option value="0905">9:05AM</option><option value="0910">9:10AM</option><option value="0915">9:15AM</option><option value="0920">9:20AM</option><option value="0925">9:25AM</option><option value="0930">9:30AM</option><option value="0935">9:35AM</option><option value="0940">9:40AM</option><option value="0945">9:45AM</option><option value="0950">9:50AM</option><option value="0955">9:55AM</option><option value="1000">10:00AM</option><option value="1005">10:05AM</option><option value="1010">10:10AM</option><option value="1015">10:15AM</option><option value="1020">10:20AM</option><option value="1025">10:25AM</option><option value="1030">10:30AM</option><option value="1035">10:35AM</option><option value="1040">10:40AM</option><option value="1045">10:45AM</option><option value="1050">10:50AM</option><option value="1055">10:55AM</option><option value="1100">11:00AM</option><option value="1105">11:05AM</option><option value="1110">11:10AM</option><option value="1115">11:15AM</option><option value="1120">11:20AM</option><option value="1125">11:25AM</option><option value="1130">11:30AM</option><option value="1135">11:35AM</option><option value="1140">11:40AM</option><option value="1145">11:45AM</option><option value="1150">11:50AM</option><option value="1155">11:55AM</option><option value="1200">12:00PM</option><option value="1205">12:05PM</option><option value="1210">12:10PM</option><option value="1215">12:15PM</option><option value="1220">12:20PM</option><option value="1225">12:25PM</option><option value="1230">12:30PM</option><option value="1235">12:35PM</option><option value="1240">12:40PM</option><option value="1245">12:45PM</option><option value="1250">12:50PM</option><option value="1255">12:55PM</option><option value="1300">1:00PM</option><option value="1305">1:05PM</option><option value="1310">1:10PM</option><option value="1315">1:15PM</option><option value="1320">1:20PM</option><option value="1325">1:25PM</option><option value="1330">1:30PM</option><option value="1335">1:35PM</option><option value="1340">1:40PM</option><option value="1345">1:45PM</option><option value="1350">1:50PM</option><option value="1355">1:55PM</option><option value="1400">2:00PM</option><option value="1405">2:05PM</option><option value="1410">2:10PM</option><option value="1415">2:15PM</option><option value="1420">2:20PM</option><option value="1425">2:25PM</option><option value="1430">2:30PM</option><option value="1435">2:35PM</option><option value="1440">2:40PM</option><option value="1445">2:45PM</option><option value="1450">2:50PM</option><option value="1455">2:55PM</option><option value="1500">3:00PM</option><option value="1505">3:05PM</option><option value="1510">3:10PM</option><option value="1515">3:15PM</option><option value="1520">3:20PM</option><option value="1525">3:25PM</option><option value="1530">3:30PM</option><option value="1535">3:35PM</option><option value="1540">3:40PM</option><option value="1545">3:45PM</option><option value="1550">3:50PM</option><option value="1555">3:55PM</option><option value="1600">4:00PM</option><option value="1605">4:05PM</option><option value="1610">4:10PM</option><option value="1615">4:15PM</option><option value="1620">4:20PM</option><option value="1625">4:25PM</option><option value="1630">4:30PM</option><option value="1635">4:35PM</option><option value="1640">4:40PM</option><option value="1645">4:45PM</option><option value="1650">4:50PM</option><option value="1655">4:55PM</option><option value="1700">5:00PM</option><option value="1705">5:05PM</option><option value="1710">5:10PM</option><option value="1715">5:15PM</option><option value="1720">5:20PM</option><option value="1725">5:25PM</option><option value="1730">5:30PM</option><option value="1735">5:35PM</option><option value="1740">5:40PM</option><option value="1745">5:45PM</option><option value="1750">5:50PM</option><option value="1755">5:55PM</option><option value="1800">6:00PM</option><option value="1805">6:05PM</option><option value="1810">6:10PM</option><option value="1815">6:15PM</option><option value="1820">6:20PM</option><option value="1825">6:25PM</option><option value="1830">6:30PM</option><option value="1835">6:35PM</option><option value="1840">6:40PM</option><option value="1845">6:45PM</option><option value="1850">6:50PM</option><option value="1855">6:55PM</option><option value="1900">7:00PM</option><option value="1905">7:05PM</option><option value="1910">7:10PM</option><option value="1915">7:15PM</option><option value="1920">7:20PM</option><option value="1925">7:25PM</option><option value="1930">7:30PM</option><option value="1935">7:35PM</option><option value="1940">7:40PM</option><option value="1945">7:45PM</option><option value="1950">7:50PM</option><option value="1955">7:55PM</option><option value="2000">8:00PM</option><option value="2005">8:05PM</option><option value="2010">8:10PM</option><option value="2015">8:15PM</option><option value="2020">8:20PM</option><option value="2025">8:25PM</option><option value="2030">8:30PM</option><option value="2035">8:35PM</option><option value="2040">8:40PM</option><option value="2045">8:45PM</option><option value="2050">8:50PM</option><option value="2055">8:55PM</option><option value="2100">9:00PM</option><option value="2105">9:05PM</option><option value="2110">9:10PM</option><option value="2115">9:15PM</option><option value="2120">9:20PM</option><option value="2125">9:25PM</option><option value="2130">9:30PM</option><option value="2135">9:35PM</option><option value="2140">9:40PM</option><option value="2145">9:45PM</option><option value="2150">9:50PM</option><option value="2155">9:55PM</option><option value="2200">10:00PM</option><option value="2205">10:05PM</option><option value="2210">10:10PM</option><option value="2215">10:15PM</option><option value="2220">10:20PM</option><option value="2225">10:25PM</option><option value="2230">10:30PM</option><option value="2235">10:35PM</option><option value="2240">10:40PM</option><option value="2245">10:45PM</option><option value="2250">10:50PM</option><option value="2255">10:55PM</option><option value="2300">11:00PM</option><option value="2305">11:05PM</option><option value="2310">11:10PM</option><option value="2315">11:15PM</option><option value="2320">11:20PM</option><option value="2325">11:25PM</option><option value="2330">11:30PM</option><option value="2335">11:35PM</option><option value="2340">11:40PM</option><option value="2345">11:45PM</option><option value="2350">11:50PM</option><option value="2355">11:55PM</option></select></td>
+														<td><select class="class-color">
+															<option selected="selected" value="skyblue">Blue 1</option>
+															<option value="dodgerblue">Blue 2</option>
+                                                            <option value="tomato">Red</option>
+															<option value="green">Green</option>
+															<option value="goldenrod">Goldenrod</option>
+                                                            <option value="plum">Plum</option>
+                                                            <option value="slategray">Slate Gray</option>
+														</select></td>
+													</tr>
+												</table>
+												<ul class="actions"><li><a href="javascript:addScheduleClass()" class="button big">Add Class</a></li><li><a href="javascript:void()" onclick="updateSchedule();" class="button big">Update</a></li></ul>
+											</section>
+
+											<section>
+												<h3><span>Your Schedule</span>  <a href="javascript:void()" onclick="downloadSchedule(this);" class="button" style="padding: 2px 10px 2px 10px; font-size: 1em;">Download</a></h3>
+												<div id="calendar">
+													<table id="schedule">
+														<tr id="days">
+														    <td>Time</td>
+															<td>Monday</td>
+															<td>Tuesday</td>
+															<td>Wednesday</td>
+															<td>Thursday</td>
+															<td>Friday</td>
+															<td>Saturday</td>
+															<td>Sunday</td>
+														</tr>
+													</table>
+													<script type="text/javascript">
+                                                        (function () {
+                                                        var previous = 1;
+                                                            for (var i=6; i<24; i++) {
+                                                                var minutes = 0;
+                                                                for (var x=0;x<12;x++) {
+                                                                    var dayId = ((i < 10) ? ("0" + i.toString()) : (i.toString())) +  ((x < 2) ? ("0" + (x*5).toString()) : (x*5).toString());
+                                                                    var newRow = document.getElementById("schedule").insertRow();
+                                                                    newRow.id = "row-" + previous;
+                                                                    newRow.className = ((x == 0 || x == 6) ? "main-row" : "mid-row");
+                                                                    previous++;
+                                                                    newRow.innerHTML = '<td>' + ((x == 0 || x == 6) ? (((i > 12) ? (i - 12) : i) + ':' + (minutes < 10 ? ("0" + minutes.toString()) : minutes) + ((i>11) ? " PM" : " AM")) : "") + '</td><td id="monday-'+dayId+'"></td><td id="tuesday-'+dayId+'"></td><td id="wednesday-'+dayId+'"></td><td id="thursday-'+dayId+'"></td><td id="friday-'+dayId+'"></td><td id="saturday-'+dayId+'"></td><td id="sunday-'+dayId+'"></td>';
+                                                                    minutes += 5;
+                                                                }
+                                                                minutes = 0;
+                                                            }
+                                                        })();
+													</script>
+												</div>
+                                                <canvas id="schedule-image" style="display: none;"></canvas>
+											</section>
+
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer" class="container">
+
+					<!-- Copyright -->
+						<div id="copyright">
+							<ul class="menu">
+								<li>&copy; 2017. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
